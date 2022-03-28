@@ -1101,8 +1101,3 @@ function formattedProp(propName: keyof typeof NodeProp) {
     </ul>
   </div>
 </template>
-
-<style lang="scss">
-@import "../assets/scss/variables";
-@import "../assets/scss/pev2";
-</style>
