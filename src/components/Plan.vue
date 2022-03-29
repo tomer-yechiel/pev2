@@ -1,6 +1,6 @@
 <template>
   <div class="plan-container d-flex flex-column overflow-hidden flex-grow-1 bg-light">
-    <div>
+    <div style="display: none">
       <ul class="nav nav-pills">
         <li class="nav-item p-1">
           <a class="nav-link px-2 py-0" :class="{'active' : activeTab === 'plan' }" href="#plan">Plan</a>
@@ -257,6 +257,11 @@ import Node from '../inode';
 import Dragscroll from '@/dragscroll';
 
 import VueTippy, { TippyComponent } from 'vue-tippy';
+
+import 'bootstrap';
+import '@fortawesome/fontawesome-free/css/all.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 Vue.use(VueTippy);
 Vue.component('tippy', TippyComponent);
 

@@ -89,19 +89,19 @@
           </div>
           <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-              <a class="nav-link" :class="{'active' : activeTab === 'general' }" @click.prevent="setActiveTab('general')" href>General</a>
+              <button class="nav-link" :class="{'active' : activeTab === 'general' }" @click.prevent="setActiveTab('general')" href>General</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-nowrap" :class="{'active' : activeTab === 'iobuffer', 'disabled': !shouldShowIoBuffers }" @click.prevent="setActiveTab('iobuffer')" href>IO & Buffers</a>
+              <button class="nav-link text-nowrap" :class="{'active' : activeTab === 'iobuffer', 'disabled': !shouldShowIoBuffers }" @click.prevent="setActiveTab('iobuffer')" href>IO & Buffers</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" :class="{'active' : activeTab === 'output', 'disabled': !node[nodeProps.OUTPUT] }" @click.prevent="setActiveTab('output')" href>Output</a>
+              <button class="nav-link" :class="{'active' : activeTab === 'output', 'disabled': !node[nodeProps.OUTPUT] }" @click.prevent="setActiveTab('output')" href>Output</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" :class="{'active' : activeTab === 'workers', 'disabled': !(node[nodeProps.WORKERS_PLANNED] || node[nodeProps.WORKERS_PLANNED_BY_GATHER]) }" @click.prevent="setActiveTab('workers')" href>Workers</a>
+              <button class="nav-link" :class="{'active' : activeTab === 'workers', 'disabled': !(node[nodeProps.WORKERS_PLANNED] || node[nodeProps.WORKERS_PLANNED_BY_GATHER]) }" @click.prevent="setActiveTab('workers')" href>Workers</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" :class="{'active' : activeTab === 'misc' }" @click.prevent="setActiveTab('misc')" href>Misc</a>
+              <button class="nav-link" :class="{'active' : activeTab === 'misc' }" @click.prevent="setActiveTab('misc')" href>Misc</button>
             </li>
           </ul>
         </div>

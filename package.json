@@ -1,12 +1,12 @@
 {
-  "name": "pev2",
+  "name": "@tomer.yechiel/pev2",
   "keywords": [
     "PostgreSQL",
     "vuejs",
     "SQL",
     "plan"
   ],
-  "version": "0.24.0",
+  "version": "0.24.1",
   "main": "./dist/pev2.common.js",
   "files": [
     "dist/*"
@@ -14,7 +14,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "vue-cli-service build --target lib --name pev2 ./src/components/Plan.vue && EXTRACT_CSS=true vue-cli-service build --target lib --name pev2 ./src/components/Plan.vue --dest ./dist/components && cp -R ./src/assets/scss ./dist/scss",
+    "build": "EXTRACT_CSS=true vue-cli-service build --target lib --name pev2 ./src/components/Plan.vue && EXTRACT_CSS=true vue-cli-service build --target lib --name pev2 ./src/components/Plan.vue --dest ./dist/components && cp -R ./src/assets/scss ./dist/scss",
     "build-app": "vue-cli-service build --dest dist-app",
     "test:unit": "jest",
     "snyk-protect": "snyk protect",
@@ -25,7 +25,6 @@
     "@types/highlight.js": "^9.12.4",
     "@types/lodash": "^4.14.178",
     "@types/moment-duration-format": "^2.2.3",
-    "bootstrap": "^4.6.1",
     "clarinet": "^0.12.3",
     "core-js": "^3.21.0",
     "highlight.js": "^10.7.2",
@@ -103,5 +102,19 @@
       "^@/(.*)$": "<rootDir>/src/$1"
     }
   },
-  "snyk": true
+  "snyk": true,
+  "description": "A VueJS component to show a graphical vizualization of a PostgreSQL execution plan.",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomer-yechiel/pev2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomer-yechiel/pev2/issues"
+  },
+  "homepage": "https://github.com/tomer-yechiel/pev2#readme"
 }
